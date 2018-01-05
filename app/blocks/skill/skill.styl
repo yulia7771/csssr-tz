@@ -1,0 +1,15 @@
+.skill
+	display block
+	line-height 1.3
+
+	&__checkbox
+		display none
+
+	&__name
+		padding-left 26px
+		font-size 21px
+		font-weight bold
+		background url(../images/not-check.png) no-repeat 0 5px
+
+	&__checkbox:checked + .skill__name
+		background url(../images/check.png) no-repeat 0 -5px

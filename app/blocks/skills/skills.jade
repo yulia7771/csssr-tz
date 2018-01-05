@@ -1,0 +1,37 @@
+include ../skill/skill
+include ../buggy-text/buggy-text
+include ../link/link
+
+mixin skills()
+	+b.skills&attributes(attributes)
+		+e.skills-col
+			+skill(true) БЭМ/OOCSS
+			+skill(true) Pug (Jade)
+			+skill(true) Stylus/LESS/SASS
+			+skill Работаю с SVG
+			+skill(true) Верстаю семантично
+			+skill Accessibility (A11Y)
+			+skill ES2015/ES2016
+		+e.skills-col
+			+skill(true) Gulp/GRUNT
+			+skill Webpack
+			+skill Дружу с WebGL
+			+skill jQuery
+			+skill Знаю/изучаю Angular
+			+skill Знаю/изучаю React
+			+skill Знаю/изучаю Node.js
+		+e.skills-col
+			+skill(true) Использую Git
+			+skill(true) С
+				= " "
+				+buggy-text глазомером
+				= " "
+				+buggy-text("_spase2") всё
+				= " "
+				+buggy-text("_spase3") ок
+			+skill(true) Читаю
+				= " "
+				+link("http://blog.csssr.ru", "_blank")
+					| blog.csssr.ru
+			+skill Я ленивый(-ая)
+			+skill У меня хороший английский

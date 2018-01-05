@@ -1,0 +1,7 @@
+mixin page-section(title, description, mod)
+	+b.page-section(class= mod)&attributes(attributes)
+		+e.title= title
+		if description
+			+e.description= description
+		+e.content
+			block
